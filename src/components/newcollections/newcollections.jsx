@@ -6,7 +6,7 @@ import Item from "../item/item"
 export default function Newcollections() {
   const[newcollections, setNew_Collections]=useState([]);
 useEffect(()=>{
- fetch('http://localhost:4000/newcollections')
+ fetch('https://sleek-wear-backend.onrender.com/newcollections')
  .then((response)=>response.json())
  .then((data)=>setNew_Collections(data))
 }, [])

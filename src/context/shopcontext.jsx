@@ -35,12 +35,12 @@ export default function ShopContextProvider(props) {
   const [cartItems, setCartItems] = useState(getDefaultCart()); // Set cartItems as an object with quantities for each product
   const [all_products, setAll_Products]= useState([]); 
   useEffect(()=>{
-    fetch('http://localhost:4000/allproducts')
+    fetch('https://sleek-wear-backend.onrender.com/allproducts')
     .then((response)=>response.json())
     .then((data)=>setAll_Products(data))
 
     if(localStorage.getItem('auth-token')){
-      fetch('http://localhost:4000/getcartdata', {
+      fetch('https://sleek-wear-backend.onrender.com/getcartdata', {
         method: "POST",
         headers: {
           Accept: "application/form-data", 
@@ -60,7 +60,7 @@ export default function ShopContextProvider(props) {
   setCartItems((prev)=>({...prev, [itemId]:prev[itemId]+1}));
 
       if(localStorage.getItem('auth-token')){
-        fetch('http://localhost:4000/addtocart', {
+        fetch('https://sleek-wear-backend.onrender.com/addtocart', {
           method: "POST",
           headers: {
             Accept: "application/form-data", 
@@ -94,7 +94,7 @@ export default function ShopContextProvider(props) {
       return newCartItems;
     });
     if (localStorage.getItem('auth-token')){
-      fetch('http://localhost:4000/removefromcart', {
+      fetch('https://sleek-wear-backend.onrender.com/removefromcart', {
         method: "POST",
         headers: {
           Accept: "application/form-data", 

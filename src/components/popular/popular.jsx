@@ -6,7 +6,7 @@ export default function Popular() {
   const [popular_product, setPopular_product]= useState([]);
 
   useEffect(()=>{
-    fetch('http://localhost:4000/popularinwomen')
+    fetch('https://sleek-wear-backend.onrender.com/popularinwomen')
     .then((response)=>response.json())
     .then((data)=>setPopular_product(data))
   }, [])
