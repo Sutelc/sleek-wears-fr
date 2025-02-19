@@ -48,7 +48,7 @@
     height: 70px;
     width: 300px;
     border-radius: 75px;
-    margin-top: 30px;
+    margin-top: 20px;
     background: #604d4d;
     font-size: 22px;
     font-weight: 500;
@@ -82,7 +82,6 @@
         width: 250px;
         height: 60px;
         margin: 20px;
-        margin-bottom: 20px;
         font-size: 20px;
     }
 
@@ -105,8 +104,6 @@
         width: 220px;
         height: 50px;
         font-size: 16px;
-        margin-bottom: 20px;
-
     }
     .hero-right img{
         width: 400px;
