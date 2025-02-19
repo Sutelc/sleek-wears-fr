@@ -11,9 +11,9 @@ export default function Hero() {
             <div className='hero-hand-icon'>
             <img src={hand_icon} alt="" />
             </div>
-            <p >New</p>
-            <p>Collections</p>
-            <p>For everyone</p>
+            <div >New</div>
+            <div>Collections</div>
+            <div>For everyone</div>
             <div className="hero-latest-btn">
                 <div>Latest Collections</div>
                 <img src={arrow_icon} alt="" />
