@@ -60,7 +60,7 @@ export default function ShopContextProvider(props) {
   setCartItems((prev)=>({...prev, [itemId]:prev[itemId]+1}));
 
       if(localStorage.getItem('auth-token')){
-        fetch('https://sleek-wear-backend.onrender.com/getcartdata', {
+        fetch('https://sleek-wear-backend.onrender.com/addtocart', {
           method: "POST",
           headers: {
             Accept: "application/form-data", 
