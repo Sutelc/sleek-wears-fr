@@ -16,7 +16,7 @@ export default function Hero() {
             <div>For everyone</div>
             <div className="hero-latest-btn">
                 <p>Latest Collections</p>
-                <img src={arrow_icon} alt="" />
+                <img className='arrowbtn' src={arrow_icon} alt="" />
             </div>
 
 

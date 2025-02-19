@@ -55,6 +55,9 @@
     color: white;
     cursor: pointer;
 }
+.arrowbtn{
+    width: 30px;
+}
 .hero-latest-btn p{
     font-size: 20px;
 }
