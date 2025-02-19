@@ -57,34 +57,34 @@ export default function ShopContextProvider(props) {
 
   // Function to add an item to the cart
   const addToCart = (itemId) => {
-  setCartItems((prev)=>({...prev, [itemId]:prev[itemId]+1}));
-
-      if(localStorage.getItem('auth-token')){
-        fetch('https://sleek-wear-backend.onrender.com/addtocart', {
-          method: "POST",
-          headers: {
-            Accept: "application/form-data", 
-            "auth-token": `${localStorage.getItem('auth-token')}`,
-            "Content-Type": 'application/json'
-          },
-          body: JSON.stringify({"itemId": itemId})
-        })
-        .then((response) => response.json())
-        .then((data) => {
-          console.log(data);
-          if (data.success) {
-            alert("Item added to cart " + data.message);
-          }
-        })
-        .catch((error) => {
-          console.error("Error adding item to cart:", error);
-          alert("There was an error while adding the item to your cart.");
-        });
+    setCartItems((prev)=>({...prev, [itemId]:prev[itemId]+1}));
+  
+        if(localStorage.getItem('auth-token')){
+          fetch('https://sleek-wear-backend.onrender.com/addtocart', {
+            method: "POST",
+            headers: {
+              Accept: "application/form-data", 
+              "auth-token": `${localStorage.getItem('auth-token')}`,
+              "Content-Type": 'application/json'
+            },
+            body: JSON.stringify({"itemId": itemId})
+          })
+          .then((response) => response.json())
+          .then((data) => {
+            console.log(data);
+            if (data.success) {
+              alert("Item added to cart " + data.message);
+            }
+          })
+          .catch((error) => {
+            console.error("Error adding item to cart:", error);
+            alert("There was an error while adding the item to your cart.");
+          });
+          
+        }
+  
         
-      }
-
-      
-  };
+    };
 
   // Function to remove an item from the cart
   const removeFromCart = (itemId) => {
