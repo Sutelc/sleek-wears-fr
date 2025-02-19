@@ -15,7 +15,7 @@ export default function Hero() {
             <div>Collections</div>
             <div>For everyone</div>
             <div className="hero-latest-btn">
-                <div>Latest Collections</div>
+                <p>Latest Collections</p>
                 <img src={arrow_icon} alt="" />
             </div>
 
