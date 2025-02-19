@@ -11,12 +11,12 @@ export default function Hero() {
             <div className='hero-hand-icon'>
             <img src={hand_icon} alt="" />
             </div>
-            <div >New</div>
-            <div>Collections</div>
-            <div>For everyone</div>
+            <p >New</p>
+            <p>Collections</p>
+            <p>For everyone</p>
             <div className="hero-latest-btn">
-                <p>Latest Collections</p>
-                <img className='arrowbtn' src={arrow_icon} alt="" />
+                <div>Latest Collections</div>
+                <img src={arrow_icon} alt="" />
             </div>
 
 

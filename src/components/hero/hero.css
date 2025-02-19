@@ -27,9 +27,9 @@
     font-weight: 700;
 
 }
-.hero div{
+.hero p{
     color: #f3ecec;
-    font-size: 40px;
+    font-size: 50px;
     font-weight: 700;
 }
 .hero-hand-icon{
@@ -45,23 +45,16 @@
     justify-content: center;
     align-items: center;
     /* gap: 15px; */
-    height: 50px;
+    height: 70px;
     width: 300px;
     border-radius: 75px;
-    margin-top: 20px;
+    margin-top: 30px;
     background: #604d4d;
     font-size: 22px;
     font-weight: 500;
     color: white;
     cursor: pointer;
 }
-.arrowbtn{
-    width: 30px;
-}
-.hero-latest-btn p{
-    font-size: 20px;
-}
-
 .hero-latest-btn:hover{
     transform: scale(75%);
     transition: 0.6s;
@@ -78,7 +71,7 @@
     .hero h2{
         font-size: 22px;
     }
-    .hero div{
+    .hero p{
         font-size: 60px;
     }
     .hero-hand-icon{
@@ -87,11 +80,8 @@
     .hero-latest-btn{
         gap: 10px;
         width: 250px;
-        height: 50px;
+        height: 60px;
         margin: 20px;
-        font-size: 20px;
-    }
-    .hero-latest-btn p{
         font-size: 20px;
     }
 
@@ -104,7 +94,7 @@
     .hero h1{
         font-size: 20px;
     }
-    .hero div{
+    .hero p{
         font-size: 50px;
     }
     .hero-hand-icon{
@@ -112,13 +102,9 @@
     }
     .hero-latest-btn{
         width: 220px;
-        height: 40px;
+        height: 50px;
         font-size: 16px;
     }
-    .hero-latest-btn p{
-        font-size: 16px;
-    }
-
     .hero-right img{
         width: 400px;
     }
@@ -131,7 +117,7 @@
     .hero h1{
         font-size: 35px;
     }
-    .hero div{
+    .hero p{
         font-size: 25px;
         width: 200px;
         font-weight: 700;
@@ -147,10 +133,6 @@
         height: 40px;
         font-size: 16px;
     }
-    .hero-latest-btn p{
-        font-size: 16px;
-    }
-
     .hero-right img{
         width: 300px;
         margin-right: -30px;
@@ -168,7 +150,7 @@
     .hero h1{
         font-size: 30px;
     }
-    .hero div{
+    .hero p{
         font-size: 20px;
 
     }
@@ -177,13 +159,9 @@
     }
     .hero-latest-btn{
         width: 200px;
-        height: 40px;
+        height: 45px;
         font-size: 16px;
     }
-    .hero-latest-btn p{
-        font-size: 15px;
-    }
-
     .hero-right img{
         width: 300px;
         margin-right: -30px;
